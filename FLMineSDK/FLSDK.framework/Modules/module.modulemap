@@ -1,0 +1,6 @@
+framework module FLSDK {
+  umbrella header "FLSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -15,6 +15,7 @@
 		0D716C3920EDC98A004F511E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D716C3820EDC98A004F511E /* main.m */; };
 		0D716C4320EDC98A004F511E /* FLMineSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D716C4220EDC98A004F511E /* FLMineSDKTests.m */; };
 		0D716C4E20EDC98A004F511E /* FLMineSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D716C4D20EDC98A004F511E /* FLMineSDKUITests.m */; };
+		0D716C5C20EDC9A3004F511E /* FLSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D716C5B20EDC9A3004F511E /* FLSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0D716C4920EDC98A004F511E /* FLMineSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLMineSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D716C4D20EDC98A004F511E /* FLMineSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMineSDKUITests.m; sourceTree = "<group>"; };
 		0D716C4F20EDC98A004F511E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D716C5B20EDC9A3004F511E /* FLSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D716C5C20EDC9A3004F511E /* FLSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +109,7 @@
 				0D716C2C20EDC989004F511E /* ViewController.h */,
 				0D716C2D20EDC989004F511E /* ViewController.m */,
 				0D716C2F20EDC989004F511E /* Main.storyboard */,
+				0D716C5B20EDC9A3004F511E /* FLSDK.framework */,
 				0D716C3220EDC98A004F511E /* Assets.xcassets */,
 				0D716C3420EDC98A004F511E /* LaunchScreen.storyboard */,
 				0D716C3720EDC98A004F511E /* Info.plist */,
@@ -435,11 +439,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP2P7DKTES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLMineSDK",
+				);
 				INFOPLIST_FILE = FLMineSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felink.FLMineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,11 +461,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RP2P7DKTES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FLMineSDK",
+				);
 				INFOPLIST_FILE = FLMineSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felink.FLMineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
