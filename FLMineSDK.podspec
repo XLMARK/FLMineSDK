@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FLMineSDK"   
-  s.version      = "0.1.5"     
+  s.version      = "0.1.6"     
   s.summary      = "FLMineSDK"  
   s.description  = "fl mine sdk " 
   s.homepage     = "https://github.com/XLMARK/FLMineSDK.git"    
