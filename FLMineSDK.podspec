@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "XL" => "1546023941@qq.com" } 
   s.platform     = :ios, "8.0"                 
   s.source       = { :git => "https://github.com/XLMARK/FLMineSDK.git", :tag => s.version  }         
-  s.source_files  =  "FLMineSDK","FLMineSDK/**/FLSDK.framework/Headers/*.{h}" 
+  #s.source_files  =  "FLMineSDK","FLMineSDK/**/FLSDK.framework/Headers/*.{h}" 
   s.frameworks = 'Foundation', 'UIKit'
   s.vendored_frameworks = "FLMineSDK/**/FLSDK.framework"
   s.requires_arc = true 
