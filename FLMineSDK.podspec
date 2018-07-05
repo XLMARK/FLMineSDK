@@ -1,4 +1,4 @@
- "Classes"Pod::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name         = "FLMineSDK"   
   s.version      = "0.1.5"     
   s.summary      = "FLMineSDK"  
